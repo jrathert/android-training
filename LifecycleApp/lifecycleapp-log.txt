@@ -1,0 +1,92 @@
+*** START ***
+07-15 14:33:30.683: I/MainActivity(1074): onCreate
+07-15 14:33:30.683: I/MainActivity(1074): onStart
+07-15 14:33:30.713: I/MainActivity(1074): onResume
+07-15 14:33:31.695: D/gralloc_goldfish(1074): Emulator without GPU emulation detected.
+*** HOME BUTTON ***
+07-15 14:34:18.383: I/MainActivity(1074): onPause
+07-15 14:34:21.432: I/MainActivity(1074): onSaveInstanceState
+07-15 14:34:21.432: I/MainActivity(1074): onStop
+*** TASK SWITCHER AUSWAHL ***
+07-15 14:34:40.453: I/MainActivity(1074): onRestart
+07-15 14:34:40.453: I/MainActivity(1074): onStart
+07-15 14:34:40.453: I/MainActivity(1074): onResume
+*** ROTATE ***
+07-15 14:34:56.692: I/MainActivity(1074): onPause
+07-15 14:34:56.692: I/MainActivity(1074): onSaveInstanceState
+07-15 14:34:56.692: I/MainActivity(1074): onStop
+07-15 14:34:56.692: I/MainActivity(1074): onDestroy
+07-15 14:34:57.492: I/MainActivity(1074): onCreate
+07-15 14:34:57.492: I/MainActivity(1074): onStart
+07-15 14:34:57.502: I/MainActivity(1074): onRestoreInstanceState
+07-15 14:34:57.502: I/MainActivity(1074): onResume
+07-15 14:34:57.532: D/dalvikvm(1074): GC_CONCURRENT freed 87K, 8% free 2733K/2940K, paused 7ms+45ms, total 194ms
+07-15 14:34:57.562: I/Choreographer(1074): Skipped 85 frames!  The application may be doing too much work on its main thread.
+*** ROTATE ***
+07-15 14:35:33.112: I/MainActivity(1074): onPause
+07-15 14:35:33.112: I/MainActivity(1074): onSaveInstanceState
+07-15 14:35:33.122: I/MainActivity(1074): onStop
+07-15 14:35:33.122: I/MainActivity(1074): onDestroy
+07-15 14:35:33.852: I/MainActivity(1074): onCreate
+07-15 14:35:33.862: I/MainActivity(1074): onStart
+07-15 14:35:33.862: I/MainActivity(1074): onRestoreInstanceState
+07-15 14:35:33.862: I/MainActivity(1074): onResume
+07-15 14:35:33.922: I/Choreographer(1074): Skipped 78 frames!  The application may be doing too much work on its main thread.
+*** SHUTDOWN DEVICE/EMULATOR ***
+07-15 14:35:44.203: I/MainActivity(1074): onPause
+07-15 14:35:44.273: I/MainActivity(1074): onSaveInstanceState
+07-15 14:35:44.273: I/MainActivity(1074): onStop
+*** START DEVICE/EMULATOR ***
+*** START ICON ***
+07-15 14:58:11.777: I/MainActivity(726): onCreate
+07-15 14:58:11.777: I/MainActivity(726): onStart
+07-15 14:58:11.777: I/MainActivity(726): onResume
+07-15 14:58:12.116: D/gralloc_goldfish(726): Emulator without GPU emulation detected.
+*** BACK ***
+07-15 14:58:20.685: I/MainActivity(726): onPause
+07-15 14:58:23.635: I/MainActivity(726): onStop
+07-15 14:58:23.635: I/MainActivity(726): onDestroy
+*** (RE)START ICON ***
+07-15 14:58:35.346: I/MainActivity(726): onCreate
+07-15 14:58:35.346: I/MainActivity(726): onStart
+07-15 14:58:35.386: I/MainActivity(726): onResume
+07-15 14:58:35.694: I/Choreographer(726): Skipped 30 frames!  The application may be doing too much work on its main thread.
+*** HOME ***
+07-15 14:58:46.885: I/MainActivity(726): onPause
+07-15 14:58:50.005: I/MainActivity(726): onSaveInstanceState
+07-15 14:58:50.005: I/MainActivity(726): onStop
+*** START ICON ***
+07-15 14:58:59.805: I/MainActivity(726): onRestart
+07-15 14:58:59.805: I/MainActivity(726): onStart
+07-15 14:58:59.815: I/MainActivity(726): onResume
+*** BACK ***
+07-15 15:01:35.435: I/MainActivity(726): onPause
+07-15 15:01:38.057: I/MainActivity(726): onStop
+07-15 15:01:38.057: I/MainActivity(726): onDestroy
+*** (RE)START TASKLIST ***
+07-15 15:01:46.046: I/MainActivity(726): onCreate
+07-15 15:01:46.046: I/MainActivity(726): onStart
+07-15 15:01:46.046: I/MainActivity(726): onResume
+07-15 15:01:47.305: D/dalvikvm(726): GC_CONCURRENT freed 88K, 8% free 2702K/2908K, paused 8ms+5ms, total 427ms
+*** HOME ***
+07-15 15:03:05.275: I/MainActivity(726): onPause
+07-15 15:03:08.255: I/MainActivity(726): onSaveInstanceState
+07-15 15:03:08.255: I/MainActivity(726): onStop
+*** (RE)START TASKLIST ***
+07-15 15:03:16.254: I/MainActivity(726): onRestart
+07-15 15:03:16.254: I/MainActivity(726): onStart
+07-15 15:03:16.254: I/MainActivity(726): onResume
+*** HOME ***
+07-15 15:18:46.745: I/MainActivity(726): onPause
+07-15 15:18:49.905: I/MainActivity(726): onSaveInstanceState
+07-15 15:18:49.905: I/MainActivity(726): onStop
+*** KILL APP ***
+*** (RE)START TASKLIST ***
+07-15 15:20:13.305: I/MainActivity(863): onCreate
+07-15 15:20:13.305: I/MainActivity(863): onStart
+07-15 15:20:13.305: I/MainActivity(863): onResume
+07-15 15:20:14.025: D/gralloc_goldfish(863): Emulator without GPU emulation detected.
+*** SHUTDOWN DEVICE/EMULATOR ***
+07-15 15:23:47.636: I/MainActivity(863): onPause
+07-15 15:23:47.725: I/MainActivity(863): onSaveInstanceState
+07-15 15:23:47.745: I/MainActivity(863): onStop
