@@ -7,23 +7,28 @@ import android.view.Menu;
 
 public class MainActivity extends Activity {
 	
-//	private static final String TAG = "MainActivity";
-
 	private final String TAG = this.getClass().getSimpleName();
-
-	// Erste Aenderung nach GIT
+	private final String RESTORE = ", can restore state";
 	
+	private final String state = "fortytwo";
+	
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.i(TAG, "onCreate");
+        String answer = null;
+        if (savedInstanceState != null) {
+        	answer = savedInstanceState.getString("answer");	
+        }
+		Log.i(TAG, "onCreate" + (savedInstanceState == null ? "" : (RESTORE + " '" + answer + "'")));
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+        Log.i(TAG, "onCreateOptionsMenu");
         return true;
     }
 
@@ -60,19 +65,31 @@ public class MainActivity extends Activity {
     @Override
     public void onDestroy() {
     	super.onDestroy();
-    	Log.i(TAG, "onDestroy");
+    	Log.i(TAG, "onDestroy " + Integer.toString(getChangingConfigurations(), 16));
     }
     
     @Override
     protected void onSaveInstanceState(Bundle outState) {
+    	outState.putString("answer", state);
     	super.onSaveInstanceState(outState);
     	Log.i(TAG, "onSaveInstanceState");
     }
 
     @Override
+    public Object onRetainNonConfigurationInstance(){
+    	Log.i(TAG, "onRetainNonConfigurationInstance");
+    	return Integer.valueOf(getTaskId());
+    }
+    @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
     	super.onRestoreInstanceState(savedInstanceState);
-    	Log.i(TAG, "onRestoreInstanceState");
+    	String answer = savedInstanceState != null ? savedInstanceState.getString("answer") : null;
+    	Object old = getLastNonConfigurationInstance();
+    	if (old != null) {
+    		int oldTaskId = ((Integer) old).intValue();
+    		assert oldTaskId == getTaskId();
+    	}
+    	Log.i(TAG, "onRestoreInstanceState" + (savedInstanceState == null ? "" : (RESTORE + " '" + answer  + "'")));
     }
 
     // === minor lifecycle calls
@@ -80,8 +97,8 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onPostCreate(Bundle savedState) {
 		super.onPostCreate(savedState);
-		String answer = null;
-		Log.i(TAG, "onPostCreate");
+		String answer = savedState != null ? savedState.getString("answer") : null;
+		Log.i(TAG, "onPostCreate" + (savedState == null ? "" : (RESTORE + " '" + answer + "'")));
 	}
 
 	@Override
